@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	rows := 5 // Количество строк в пирамиде
-	fmt.Scan(&rows)
-
+	// Читайте аргументы командной строки
+	rows = os.Args[1:]
 	for i := 1; i <= rows; i++ {
 		// Печать пробелов перед звездочками
 		for j := 1; j <= rows-i; j++ {
