@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	rows := 5 // Количество строк в пирамиде
+	fmt.Scan(&rows)
 
 	for i := 1; i <= rows; i++ {
 		// Печать пробелов перед звездочками
